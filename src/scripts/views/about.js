@@ -1,7 +1,6 @@
-var template = require('../../../src/templates/about.html');
-var Model = require('../models/about-model');
-import BaseView from "../core/baseView.js";
-import AboutModel from "../models/about-model.js";
+import template from '../../../src/templates/about.html';
+import BaseView from '../core/baseView.js';
+import AboutModel from '../models/about-model.js';
 
 class About extends BaseView {
     constructor(app) {
@@ -15,10 +14,8 @@ class About extends BaseView {
         return super.title;
     };
     render() {
-        console.log('main render');
     };
     destroy() {
-        console.log('main destroy');
     };
     animateIn(complete) {
         this.app.controller.content.addClass('content-show');

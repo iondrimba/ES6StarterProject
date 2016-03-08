@@ -1,16 +1,17 @@
-var page = require('../../node_modules/page/page');
-var $ = require('../../node_modules/jquery/dist/jquery');
-var handlebars = require('handlebars');
-import Controller from "./core/controller.js";
+import page from '../../node_modules/page/page.js';
+import handlebars from '../../node_modules/handlebars/dist/handlebars.js';
+import jquery from '../../node_modules/jquery/dist/jquery.js';
+import Controller from './core/controller.js';
 
 class App {
     constructor() {
-        this.$ = $;
+        this.$ = jquery;
         this.router = page;
         this.handlebars = handlebars;
         this.controller = new Controller(this);
         this.controller.start();
     }
+    //encapsulating template engine so its easy to change
     compile(template) {
         return this.handlebars.compile(template);
     }

@@ -1,15 +1,17 @@
-var template = require('../../../src/templates/footer.html');
+import template from '../../../src/templates/footer.html';
 import FooterModel from '../models/footer-model.js';
 
-var Footer = function Header(app) {
-    this.model = new FooterModel();
-    this.view = function() {
-        var view = app.compile(template);
+class Footer {
+    constructor(app) {
+        this.app = app;
+        this.model = new FooterModel();
+    }
+    view() {
+        let view = this.app.compile(template);
         view = view(this.model);
         return view;
     };
-    this.render = function() {
-    };
+    render() {};
 };
 
-module.exports = Footer;
+export default Footer;

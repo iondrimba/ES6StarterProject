@@ -1,4 +1,4 @@
-var template = require('../../../src/templates/notfound.html');
+import template from '../../../src/templates/notfound.html';
 import NotFoundModel from '../models/notfound-model';
 import BaseView from '../core/baseView.js';
 
@@ -13,12 +13,8 @@ class NotFound extends BaseView {
     title() {
         return super.title;
     };
-    render() {
-        console.log('main render');
-    };
-    destroy() {
-        console.log('main destroy');
-    };
+    render() {};
+    destroy() {};
     animateIn(complete) {
         this.app.controller.content.addClass('content-show');
         super.animateIn(complete);

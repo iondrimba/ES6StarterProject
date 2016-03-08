@@ -1,4 +1,4 @@
-var template = require('../../../src/templates/contact.html');
+import template from '../../../src/templates/contact.html';
 import ContactModel from '../models/contact-model.js';
 import BaseView from '../core/baseView.js';
 
@@ -13,11 +13,9 @@ class Contact extends BaseView {
     title() {
         return super.title;
     };
-    render() {
-        console.log('main render');
-    };
+    render() {};
     destroy() {
-        console.log('main destroy');
+
     };
     animateIn(complete) {
         this.app.controller.content.addClass('content-show');

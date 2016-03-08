@@ -1,9 +1,9 @@
-var template = require('../../../src/templates/home.html');
+import template from '../../../src/templates/home.html';
 import HomeModel from '../models/home-model.js';
 import BaseView from '../core/baseView.js';
 
 class Home extends BaseView {
-    constructor(app) {        
+    constructor(app) {
         super(app);
         this.button = null;
         this.model = new HomeModel();
@@ -24,6 +24,7 @@ class Home extends BaseView {
     destroy() {
         this.button.off('click');
         this.button = null;
+        this.model = null;
     };
     animateIn(complete) {
         this.app.controller.content.addClass('content-show');

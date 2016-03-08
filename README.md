@@ -42,7 +42,7 @@ Includes:
 * Karma (test runner) WIP
 * Jasmine (test library) WIP
 * Sass
-* ESLint (not supported yet)
+* ESLint
 * Scss Lint (Requires Ruby and [scss-lint])
 * Imagemin (images optimization)
 * Uglify (not supported yet)

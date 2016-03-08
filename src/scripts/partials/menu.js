@@ -1,15 +1,17 @@
-var template = require('../../../src/templates/menu.html');
+import template from '../../../src/templates/menu.html';
 import MenuModel from '../models/menu-model.js';
 
-
-var Menu = function Menu(app) {
-    this.model = new MenuModel();
-    this.view = function() {
-        var view = app.compile(template);
+class Menu {
+    constructor(app) {
+        this.app = app;
+        this.model = new MenuModel();
+    }
+    view() {
+        let view = this.app.compile(template);
         view = view(this.model);
         return view;
     };
-    this.render = function() {
+    render() {
 
     };
 };

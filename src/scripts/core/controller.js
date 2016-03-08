@@ -1,8 +1,8 @@
-var Master = require('../partials/master');
-import Home from "../views/home.js";
-import Contact from "../views/contact.js";
-import About from "../views/about.js";
-import NotFound from "../views/notfound.js";
+import Master from '../partials/master.js';
+import Home from '../views/home.js';
+import Contact from '../views/contact.js';
+import About from '../views/about.js';
+import NotFound from '../views/notfound.js';
 
 class Controller {
     constructor(app) {
@@ -28,7 +28,7 @@ class Controller {
     };
     navigate(path) {
         if (path === undefined) {
-            throw new Error('invalid path::' + path);
+            throw new Error('invalid path::${path}');
         }
         this.app.router(path);
     };
@@ -49,18 +49,19 @@ class Controller {
     masterPageUpdate() {
         document.title = this.current.title();
     };
-    createView(View) {        
+    createView(View) {
         this.current = new View(this.app);
         this.add(this.current.view());
         this.current.render();
         this.masterPageUpdate();
-        var timeout = setTimeout(function() {
+
+        let timeout = setTimeout(()=> {
             this.current.animateIn(this.animateInComplete);
             clearTimeout(timeout);
-        }.bind(this), 10);
+        }, 10);
     };
     animateInComplete() {
-        
+
     };
     prerender(ctx, next) {
         next();
