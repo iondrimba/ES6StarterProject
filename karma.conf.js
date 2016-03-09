@@ -21,21 +21,37 @@ module.exports = function(config) {
         included: false,
         browserify: {
             debug: true,
-            transform: ['stringify', istanbul({
+            transform: ['stringify', 'babelify', istanbul({
                 defaultIgnore: true
             })],
             extensions: ['.js'],
             bundleDelay: 1000
         },
-
+        babelPreprocessor: {
+            options: {
+                presets: ['es2015']
+            },
+            filename: function(file) {
+                return file.originalPath;
+            },
+            sourceFileName: function(file) {
+                return file.originalPath;
+            }
+        },
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'src/scripts/app.js': ['browserify'],
-            'spec/*.js': ['browserify']
+            'src/scripts/app.js': ['babel', 'browserify'],
+            'spec/*.js': ['babel', 'browserify']
         },
         coverageReporter: {
-            // specify a common output directory 
+            instrumenters: { isparta: require('isparta') },
+            instrumenter: {
+                'spec/*.js': 'isparta'
+            },
+            instrumenterOptions: {
+                isparta: { babel: { presets: 'es2015' } }
+            },
             dir: 'test/reports/coverage',
             reporters: [
                 // reporters not supporting the `file` property 
@@ -49,7 +65,7 @@ module.exports = function(config) {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['spec', 'coverage'],
+        reporters: ['spec'],
 
         thresholdReporter: {
             statements: 90,

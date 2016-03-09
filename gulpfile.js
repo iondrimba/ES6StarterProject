@@ -1,6 +1,7 @@
 'use strict';
 var Promise = require('es6-promise').Promise;
 var gulp = require('gulp');
+var gulpsync = require('gulp-sync')(gulp);
 
 // using vinyl-source-stream: 
 gulp.task('browserify', require('./tasks/browserify.js'));
@@ -26,20 +27,24 @@ gulp.task('watch', require('./tasks/watch.js'));
 //html min 
 gulp.task('html-min', require('./tasks/html-min.js'));
 
+//css min 
+gulp.task('minify-css', require('./tasks/minify-css.js'));
+
 //post css
 gulp.task('post-css', require('./tasks/post-css.js'));
 
 //local server
 gulp.task('browser-sync', require('./tasks/browser-sync.js'));
 
-//coveralls
-gulp.task('coveralls', require('./tasks/coveralls.js'));
-
 // Default Task
-gulp.task('default', ['scsslint', 'sass', 'lint', 'browserify', 'browser-sync', 'watch']);
+gulp.task('default', gulpsync.sync(['scsslint', 'sass', 'lint', 'browserify', 'browser-sync', 'watch']));
 
-// Publish Task
-gulp.task('deploy', ['scsslint', 'sass', 'lint', 'browserify', 'browser-sync', 'watch', 'html-min']);
+//optimization task isolated because of the asynchronous problems gulp has
+gulp.task('optimize', gulpsync.sync(['minify-css', 'html-min', 'uglify', 'imagemin']));
 
-//CI
-gulp.task('travis', ['scsslint', 'sass', 'lint', 'browserify', 'imagemin', 'html-min']);
+//publish Task
+gulp.task('deploy', gulpsync.sync(['scsslint', 'sass', 'lint', 'imagemin', 'browserify']));
+
+//coveralls
+//gulp.task('coveralls', require('./tasks/coveralls.js'));
+

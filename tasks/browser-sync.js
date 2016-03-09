@@ -3,8 +3,7 @@ var browserSync = require('browser-sync').create();
 
 module.exports = function() {
     browserSync.init({
-        server: "./public",
-        //proxy: "spa:3000"
+        server: "./public"
     });
 
     gulp.watch("./public/css/app.css").on('change', browserSync.reload);

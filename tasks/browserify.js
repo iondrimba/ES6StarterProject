@@ -11,10 +11,7 @@ module.exports = function() {
         extensions: ['.txt', '.html'],
         minify: true,
         minifier: {
-            extensions: ['.html'],
-            options: {
-                // html-minifier options 
-            }
+            extensions: ['.html']
         }
     });
 

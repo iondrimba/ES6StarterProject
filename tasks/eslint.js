@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
-var babeleslint = require('babel-eslint');
 
 module.exports = function() {
     return gulp.src(['./src/scripts/**/*.js'])
