@@ -2,25 +2,31 @@
 
 Ready to go ES6 project for SPA template.
 
-[![Travis build status](https://travis-ci.org/iondrimba/ES6StarterProject.svg?branch=master)](https://travis-ci.org/iondrimba/ES6StarterProject)
+[![Travis build status](https://travis-ci.org/iondrimba/ES6StarterProject.svg?branch=master)](https://travis-ci.org/iondrimba/ES6StarterProject) [![Coverage Status](https://coveralls.io/repos/github/iondrimba/ES6StarterProject/badge.svg?branch=master)](https://coveralls.io/github/iondrimba/ES6StarterProject?branch=master)
+
+
+####Requires:
+
+* NodeJs
+* Gulp
 
 ## Installation
 
 ```sh
- git clone https://github.com/iondrimba/ES6StarterProject.git
+ git clone https://github.com/iondrimba/ES6StarterProject.git 
  cd ES6StarterProject
  npm install
  gulp
 ```
 
-[Live demo]
+###[Live demo]
 
-TODO:
+####TODO:
 
-* Make Travis and Tests work
+* Write more tests
 
 
-Features:
+####Features:
 
 * ES6 ready
 * Router system with pushstate (page.js)
@@ -31,18 +37,18 @@ Features:
 > In order to test if Pushstate is working
 > you have to host it on apache so it can reads the .htaccess file
 
-Testing:
+####Testing:
 
 * $ npm test
 
-Includes:
+####Includes:
 
 * ES6 transpile via Babel
 * BrowserSync
 * Browserify
 * Karma 
 * Jasmine 
-* Code Coverage (Coverall) not working yet
+* Code Coverage
 * Sass
 * ESLint
 * Scss Lint (Requires Ruby and [scss-lint])
@@ -52,13 +58,13 @@ Includes:
 * Html-Min
 * Post-Css (autoprefixer)
 
-Gulp Tasks:
+####Gulp Tasks:
 
 * gulp (default)
 * gulp deploy (run tasks without browser-sync and watch)
 * gulp optimize (run optimization tasks)
 
-Structure:
+####Structure:
 
 ````bash
 ├── public/

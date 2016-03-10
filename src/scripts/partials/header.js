@@ -14,4 +14,4 @@ class Header {
     render() {};
 };
 
-module.exports = Header;
+export default Header;

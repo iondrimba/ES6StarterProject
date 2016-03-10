@@ -37,4 +37,4 @@ class Master {
 };
 
 
-module.exports = Master;
+export default Master;
