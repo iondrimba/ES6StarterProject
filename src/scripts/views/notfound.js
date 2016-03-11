@@ -1,6 +1,6 @@
 import template from '../../../src/templates/notfound.html';
 import NotFoundModel from '../models/notfound-model';
-import BaseView from '../core/baseView.js';
+import BaseView from '../core/baseView';
 
 class NotFound extends BaseView {
     constructor(app) {

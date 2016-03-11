@@ -1,5 +1,5 @@
 import template from '../../../src/templates/menu.html';
-import MenuModel from '../models/menu-model.js';
+import MenuModel from '../models/menu-model';
 
 class Menu {
     constructor(app) {
@@ -17,4 +17,4 @@ class Menu {
 };
 
 
-module.exports = Menu;
+export default Menu;

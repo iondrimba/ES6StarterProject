@@ -33,6 +33,9 @@ gulp.task('minify-css', require('./tasks/minify-css.js'));
 //post css
 gulp.task('post-css', require('./tasks/post-css.js'));
 
+//coveralls
+gulp.task('coveralls', require('./tasks/coveralls.js'));
+
 //local server
 gulp.task('browser-sync', require('./tasks/browser-sync.js'));
 
@@ -44,7 +47,4 @@ gulp.task('optimize', gulpsync.sync(['minify-css', 'html-min', 'uglify', 'imagem
 
 //publish Task
 gulp.task('deploy', gulpsync.sync(['scsslint', 'sass', 'lint', 'imagemin', 'browserify']));
-
-//coveralls
-//gulp.task('coveralls', require('./tasks/coveralls.js'));
 

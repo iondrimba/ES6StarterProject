@@ -1,4 +1,4 @@
-import BaseModel from './base-model.js';
+import BaseModel from './base-model';
 
 class MasterModel extends BaseModel {
     constructor() {

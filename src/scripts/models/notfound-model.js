@@ -1,9 +1,9 @@
-import BaseModel from './base-model.js';
+import BaseModel from './base-model';
 
 class NotFoundModel extends BaseModel {
     constructor() {
         super();
-        super.title = 'Ooops!';
+        this.title = 'Ooops!';
         this._returnUrl = '/';
     }
     set title(string) {

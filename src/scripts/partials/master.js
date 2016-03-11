@@ -1,5 +1,5 @@
 import template from '../../../src/templates/master.html';
-import HomeModel from '../models/home-model.js';
+import HomeModel from '../models/home-model';
 import Header from './header';
 import Menu from './menu';
 import Footer from './footer';
@@ -37,4 +37,4 @@ class Master {
 };
 
 
-module.exports = Master;
+export default Master;

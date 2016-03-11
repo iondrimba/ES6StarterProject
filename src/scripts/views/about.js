@@ -1,6 +1,6 @@
 import template from '../../../src/templates/about.html';
-import BaseView from '../core/baseView.js';
-import AboutModel from '../models/about-model.js';
+import BaseView from '../core/baseView';
+import AboutModel from '../models/about-model';
 
 class About extends BaseView {
     constructor(app) {

@@ -1,7 +1,7 @@
-import page from '../../node_modules/page/page.js';
-import handlebars from '../../node_modules/handlebars/dist/handlebars.js';
-import jquery from '../../node_modules/jquery/dist/jquery.js';
-import Controller from './core/controller.js';
+import page from '../../node_modules/page/page';
+import handlebars from '../../node_modules/handlebars/dist/handlebars';
+import jquery from '../../node_modules/jquery/dist/jquery';
+import Controller from './core/controller';
 
 class App {
     constructor() {

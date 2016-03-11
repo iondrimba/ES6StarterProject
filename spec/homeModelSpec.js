@@ -1,6 +1,6 @@
 'use strict';
 
-import HomeModel from '../src/scripts/models/home-model.js';
+import HomeModel from '../src/scripts/models/home-model';
 
 describe('HomeModel', () => {
 

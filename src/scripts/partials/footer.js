@@ -1,5 +1,5 @@
 import template from '../../../src/templates/footer.html';
-import FooterModel from '../models/footer-model.js';
+import FooterModel from '../models/footer-model';
 
 class Footer {
     constructor(app) {

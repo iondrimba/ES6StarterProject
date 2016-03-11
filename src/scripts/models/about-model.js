@@ -1,9 +1,9 @@
-import BaseModel from './base-model.js';
+import BaseModel from './base-model';
 
 class AboutModel extends BaseModel {
     constructor() {
         super();
-        super.title = 'About';
+        this.title = 'About';
     }
     set title(string) {
         super.title = string;

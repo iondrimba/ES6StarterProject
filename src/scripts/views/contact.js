@@ -1,6 +1,6 @@
 import template from '../../../src/templates/contact.html';
-import ContactModel from '../models/contact-model.js';
-import BaseView from '../core/baseView.js';
+import ContactModel from '../models/contact-model';
+import BaseView from '../core/baseView';
 
 class Contact extends BaseView {
     constructor(app) {

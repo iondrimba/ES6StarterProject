@@ -1,7 +1,7 @@
-import HomeModel from '../src/scripts/models/home-model.js';
-import AboutModel from '../src/scripts/models/about-model.js';
-import ContactModel from '../src/scripts/models/contact-model.js';
-import NotFoundModel from '../src/scripts/models/notfound-model.js';
+import HomeModel from '../src/scripts/models/home-model';
+import AboutModel from '../src/scripts/models/about-model';
+import ContactModel from '../src/scripts/models/contact-model';
+import NotFoundModel from '../src/scripts/models/notfound-model';
 
 describe('src/scripts/core - Controller Tests', () => {
 

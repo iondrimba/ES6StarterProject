@@ -1,5 +1,5 @@
 import template from '../../../src/templates/header.html';
-import HeaderModel from '../models/header-model.js';
+import HeaderModel from '../models/header-model';
 
 class Header {
     constructor(app) {
@@ -14,4 +14,4 @@ class Header {
     render() {};
 };
 
-module.exports = Header;
+export default Header;

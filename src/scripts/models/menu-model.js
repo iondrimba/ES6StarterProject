@@ -1,4 +1,4 @@
-import BaseModel from './base-model.js';
+import BaseModel from './base-model';
 
 class MenuModel extends BaseModel {
     constructor() {

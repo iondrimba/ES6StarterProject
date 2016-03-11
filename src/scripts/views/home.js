@@ -1,6 +1,6 @@
 import template from '../../../src/templates/home.html';
-import HomeModel from '../models/home-model.js';
-import BaseView from '../core/baseView.js';
+import HomeModel from '../models/home-model';
+import BaseView from '../core/baseView';
 
 class Home extends BaseView {
     constructor(app) {
