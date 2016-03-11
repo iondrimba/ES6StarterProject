@@ -2,7 +2,7 @@
 
 Ready to go ES6 project starter with Tests and Coverage.
 
-[![Travis build status](https://travis-ci.org/iondrimba/ES6StarterProject.svg?branch=master)](https://travis-ci.org/iondrimba/ES6StarterProject) [![Coverage Status](https://coveralls.io/repos/github/iondrimba/ES6StarterProject/badge.svg?branch=master)](https://coveralls.io/github/iondrimba/ES6StarterProject?branch=master)
+[![Travis build status](https://travis-ci.org/iondrimba/es6starterproject.svg?branch=master)](https://travis-ci.org/iondrimba/es6starterproject) [![Coverage Status](https://coveralls.io/repos/github/iondrimba/es6starterproject/badge.svg?branch=master)](https://coveralls.io/github/iondrimba/es6starterproject?branch=master)
 
 
 #### Requires:
@@ -13,22 +13,23 @@ Ready to go ES6 project starter with Tests and Coverage.
 ## Installation
 
 ```sh
- git clone https://github.com/iondrimba/ES6StarterProject.git 
- cd ES6StarterProject
+ git clone https://github.com/iondrimba/es6starterproject.git 
+ cd es6starterproject
  npm install
  gulp
 ```
 
 ### [Live demo]
- 
+
 #### GOAL:
-Reduce time spent by developers looking to work today with all the new ES6 features, it also includes Tests and Coverage. I chose to leave it simple as possible(no MV* Framework dependecy).
+Reduce time spent by developers looking to work today with all the new ES6 features, it also includes Tests and Coverage. I chose to leave it simple as possible (no MV* Framework dependency).
 
 
 #### TODO:
 
 * Write more tests
 
+![Alt text](picture.png)
 
 #### Features:
 
@@ -112,4 +113,4 @@ Reduce time spent by developers looking to work today with all the new ES6 featu
 ````
 
 [scss-lint]:<https://github.com/brigade/scss-lint#installation>
-[Live demo]:<http://iondrimba.github.io/ES6StarterProject/>
+[Live demo]:<http://iondrimba.github.io/es6starterproject/>
