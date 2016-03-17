@@ -11,6 +11,6 @@ class HomeModel extends BaseModel {
     get title() {
         return super.title;
     }
-};
+}
 
 export default HomeModel;

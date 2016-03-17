@@ -3,7 +3,7 @@ class BaseView {
     constructor(app) {
         this._title = '';
         this.app = app;
-        const animationDuration = 500;
+        this.animationDuration = 500;
     }
     view(template, model) {
         let view = this.app.compile(template);
@@ -26,7 +26,7 @@ class BaseView {
         let timeout = setTimeout(()=> {
             clearTimeout(timeout);
             complete();
-        }, BaseView.animationDuration);
+        }, this.animationDuration);
     }
 }
 

@@ -14,7 +14,7 @@ class Master {
         this.header = new Header(this.app);
         this.menu = new Menu(this.app);
         this.footer = new Footer(this.app);
-    };
+    }
 
     view() {
         this.model.headerView = this.header.view();
@@ -24,7 +24,7 @@ class Master {
         let view = this.app.compile(template);
         view = view(this.model);
         return view;
-    };
+    }
     render() {
 
         this.header.render();
@@ -32,9 +32,9 @@ class Master {
         this.menu.render();
 
         this.footer.render();
-    };
-    destroy() {};
-};
+    }
+    destroy() {}
+}
 
 
 export default Master;

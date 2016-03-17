@@ -6,10 +6,10 @@ class FootertModel extends BaseModel {
     }
     set title(string) {
         super.title = string;
-    };
+    }
     get title() {
         return super.title;
-    };
-};
+    }
+}
 
 export default FootertModel;

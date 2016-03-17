@@ -10,8 +10,8 @@ class Footer {
         let view = this.app.compile(template);
         view = view(this.model);
         return view;
-    };
-    render() {};
-};
+    }
+    render() {}
+}
 
 export default Footer;

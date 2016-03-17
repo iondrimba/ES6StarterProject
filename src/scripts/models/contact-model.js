@@ -11,6 +11,6 @@ class ContactModel extends BaseModel {
     get title() {
         return super.title;
     }
-};
+}
 
 export default ContactModel;
