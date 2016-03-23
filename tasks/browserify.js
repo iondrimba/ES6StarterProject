@@ -15,7 +15,6 @@ module.exports = function() {
         }
     });
 
-
     var bundleStream = browserify('./src/scripts/app.js')
         .transform(babelify, {
             'presets': ['es2015']

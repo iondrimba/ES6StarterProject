@@ -34,6 +34,7 @@ Reduce time spent by developers looking to work today with all the new ES6 featu
 #### Features:
 
 * ES6 ready
+* SemVer (Automated package and files versioning)
 * Router system with pushstate (page.js)
 * Templating engine (handlebars.js)
 * Tests (Jasmine + karma)
@@ -54,6 +55,7 @@ Reduce time spent by developers looking to work today with all the new ES6 featu
 * BrowserSync
 * Browserify
 * Karma 
+* SemVer
 * Jasmine 
 * Code Coverage
 * Sass
@@ -70,6 +72,13 @@ Reduce time spent by developers looking to work today with all the new ES6 featu
 * gulp (default)
 * gulp deploy (run tasks without browser-sync and watch)
 * gulp optimize (run optimization tasks)
+* gulp bump-patch / minor / major (update files with version number)
+
+####Semantic Versioning:
+
+The bump-versions tasks should be executed after your deploy and optimize task
+The task will rename the file app.js to app.version.js, the same will be done to the app.css.
+After that the index.html is updated with the new file references.
 
 #### Structure:
 

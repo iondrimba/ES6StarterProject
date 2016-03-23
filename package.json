@@ -1,6 +1,6 @@
 {
   "name": "es6starterproject",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Ready to go ES6 project starter with Tests and Coverage. No MV* framework dependency.",
   "main": "gulpfile.js",
   "keywords": [
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iondrimba/ES6StarterProject.git"
+    "url": "git+https://github.com/iondrimba/es6starterproject.git"
   },
   "scripts": {
     "test": "karma start"
@@ -35,6 +35,7 @@
     "es6-promise": "^3.1.2",
     "graceful-fs": "^4.1.3",
     "gulp": "^3.9.0",
+    "gulp-bump": "^2.0.1",
     "gulp-clean-css": "^2.0.3",
     "gulp-coveralls": "^0.1.4",
     "gulp-eslint": "^2.0.0",
@@ -66,6 +67,8 @@
     "karma-threshold-reporter": "^0.1.15",
     "lodash": "^4.6.1",
     "phantomjs-prebuilt": "^2.1.5",
+    "rename-me": "0.0.11",
+    "semver": "^5.1.0",
     "stringify": "^5.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
