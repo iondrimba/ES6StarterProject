@@ -68,8 +68,6 @@
     "lodash": "^4.6.1",
     "phantomjs-prebuilt": "^2.1.5",
     "rename-me": "0.0.11",
-    "route-recognizer": "^0.1.11",
-    "rsvp": "^3.2.1",
     "semver": "^5.1.0",
     "stringify": "^5.0.0",
     "vinyl-source-stream": "^1.1.0",
