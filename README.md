@@ -1,6 +1,6 @@
 # ES6 Starter Project
 
-Ready to go ES6 project starter with Tests and Coverage.
+Ready to go ES6(SPA) project starter with Tests and Coverage.
 
 [![Travis build status](https://travis-ci.org/iondrimba/es6starterproject.svg?branch=master)](https://travis-ci.org/iondrimba/es6starterproject) [![Build status](https://ci.appveyor.com/api/projects/status/n6y1d4c5qgtnuc7m?svg=true)](https://ci.appveyor.com/project/iondrimba/es6starterproject) [![Coverage Status](https://coveralls.io/repos/github/iondrimba/es6starterproject/badge.svg?branch=master)](https://coveralls.io/github/iondrimba/es6starterproject?branch=master)
 
