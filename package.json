@@ -1,6 +1,6 @@
 {
   "name": "es6starterproject",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Ready to go ES6 project starter with Tests and Coverage. No MV* framework dependency.",
   "main": "gulpfile.js",
   "keywords": [
@@ -21,7 +21,7 @@
   "scripts": {
     "test": "karma start"
   },
-  "author": "Ion D. Filho",
+  "author": "Ion D. Filho <iondrimba@gmail.com> (https://iondrimbafilho.me)",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.3",

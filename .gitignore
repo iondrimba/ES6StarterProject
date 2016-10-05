@@ -1,7 +1,5 @@
 .DS_Store
 node_modules/
 test/**
-coverage/
-public/js/
-public/css/
-public/index.html
+public/js/app.*.js
+public/css/app.*.css

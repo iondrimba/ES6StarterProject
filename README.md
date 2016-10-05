@@ -2,7 +2,7 @@
 
 Ready to go ES6 project starter with Tests and Coverage.
 
-[![Travis build status](https://travis-ci.org/iondrimba/es6starterproject.svg?branch=master)](https://travis-ci.org/iondrimba/es6starterproject) [![Coverage Status](https://coveralls.io/repos/github/iondrimba/es6starterproject/badge.svg?branch=master)](https://coveralls.io/github/iondrimba/es6starterproject?branch=master)
+[![Travis build status](https://travis-ci.org/iondrimba/es6starterproject.svg?branch=master)](https://travis-ci.org/iondrimba/es6starterproject) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva/branch/master?svg=true)](https://ci.appveyor.com/project/iondrimba/es6starterproject/branch/master) [![Coverage Status](https://coveralls.io/repos/github/iondrimba/es6starterproject/badge.svg?branch=master)](https://coveralls.io/github/iondrimba/es6starterproject?branch=master)
 
 
 #### Requires:
@@ -76,9 +76,12 @@ Reduce time spent by developers looking to work today with all the new ES6 featu
 
 ####Semantic Versioning:
 
-The bump-versions tasks should be executed after your deploy and optimize task
-The task will rename the file app.js to app.version.js, the same will be done to the app.css.
-After that the index.html is updated with the new file references.
+The bump-versions tasks should be executed after your deploy and optimize task.
+The task will:
+
+1. Rename the file app.js to app.version.js
+2. Rename the file app.css to app.version.css
+3. Will update the index.html with the new file references.
 
 #### Structure:
 
@@ -95,18 +98,18 @@ After that the index.html is updated with the new file references.
 │── src/
 │    ├── images/
 │    ├── scripts/
-│	 │    ├─── core/ 
-│	 │    ├─── models/
-│	 │    ├─── partials/
-│	 │    ├─── views
-│	 │    └─── app.js
-│	 │
-│	 ├── scss/
-│	 │    ├─── components/ 
-│	 │    ├─── partials/
-│	 │    ├─── views/
-│	 │    └─── app.scss
-│	 │
+│	   │    ├─── core/ 
+│	   │    ├─── models/
+│	   │    ├─── partials/
+│	   │    ├─── views
+│	   │    └─── app.js
+│	   │
+│	   ├── scss/
+│	   │    ├─── components/ 
+│	   │    ├─── partials/
+│	   │    ├─── views/
+│	   │    └─── app.scss
+│	   │
 │    └── templates/
 │
 │── tasks/

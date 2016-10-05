@@ -13,7 +13,7 @@ class NotFound extends BaseView {
     title() {
         return super.title;
     }
-    render() {}
+    render() {} 
     destroy() {}
     animateIn(complete) {
         this.app.controller.content.addClass('content-show');
