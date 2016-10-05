@@ -25,12 +25,6 @@ Ready to go ES6 project starter with Tests and Coverage.
 Reduce time spent by developers looking to work today with all the new ES6 features, it also includes Tests and Coverage. I chose to leave it simple as possible (no MV* Framework dependency).
 
 
-#### TODO:
-
-* Write more tests
-
-![Alt text](picture.png)
-
 #### Features:
 
 * ES6 ready
