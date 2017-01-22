@@ -4,7 +4,11 @@ var browserSync = require('browser-sync')
 
 module.exports = function () {
 	browserSync.init({
-		server: "./public"
+		//server: "./public",
+		proxy: "http://www.bbc.com",
+		//files: ["public/css/app.css", "public/js/*.js", "public/*.html"],
+		browser: ["chrome", "firefox"],
+		//browser: ["chrome", "firefox", "iexplore"],
 	});
 
 	gulp.watch("./public/css/app.css")
