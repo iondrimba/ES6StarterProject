@@ -61,14 +61,14 @@ Reduce time spent by developers looking to work today with all the new ES6 featu
 * Html-Min
 * Post-Css (autoprefixer)
 
-####Gulp Tasks:
+#### Gulp Tasks:
 
 * gulp (default)
 * gulp deploy (run tasks without browser-sync and watch)
 * gulp optimize (run optimization tasks)
 * gulp bump-patch / minor / major (update files with version number)
 
-####Semantic Versioning:
+#### Semantic Versioning:
 
 The bump-versions tasks should be executed after your deploy and optimize task.
 The task will:
