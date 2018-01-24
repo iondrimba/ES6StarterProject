@@ -376,7 +376,6 @@ button {
   border: none;
   text-transform: uppercase;
   cursor: pointer;
-  -webkit-transition: all .3s;
   transition: all .3s;
   font-family: inherit;
   font-size: inherit;
@@ -385,7 +384,6 @@ button {
 a:hover,
 button:hover {
   background-color: #074FBB;
-  -webkit-transition: all .3s;
   transition: all .3s; }
 
 a:active,
@@ -419,5 +417,4 @@ hr {
 
 .content-show {
   opacity: 1;
-  -webkit-transition: all .5s;
   transition: all .5s; }
