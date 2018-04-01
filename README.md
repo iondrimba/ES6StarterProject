@@ -2,7 +2,7 @@
 
 Ready to go ES6 project starter with Tests and Coverage.
 
-[![Travis build status](https://travis-ci.org/iondrimba/es6starterproject.svg?branch=master)](https://travis-ci.org/iondrimba/es6starterproject) [![Build status](https://ci.appveyor.com/api/projects/status/afgdiqmde47rpubf/branch/master?svg=true)](https://ci.appveyor.com/project/iondrimba/es6starterproject/branch/master) [![Coverage Status](https://coveralls.io/repos/github/iondrimba/es6starterproject/badge.svg?branch=master)](https://coveralls.io/github/iondrimba/es6starterproject?branch=master)
+[![Travis build status](https://travis-ci.org/iondrimba/es6starterproject.svg?branch=master)](https://travis-ci.org/iondrimba/es6starterproject) [![Build status](https://ci.appveyor.com/api/projects/status/afgdiqmde47rpubf/branch/master?svg=true)](https://ci.appveyor.com/project/iondrimba/es6starterproject/branch/master) [![Coverage Status](https://coveralls.io/repos/github/iondrimba/es6starterproject/badge.svg?branch=master)](https://coveralls.io/github/iondrimba/es6starterproject?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/cf582141f275b40ebc0a/maintainability)](https://codeclimate.com/github/iondrimba/es6starterproject/maintainability)
 
 
 #### Requires:
@@ -13,7 +13,7 @@ Ready to go ES6 project starter with Tests and Coverage.
 ## Installation
 
 ```sh
- git clone https://github.com/iondrimba/es6starterproject.git 
+ git clone https://github.com/iondrimba/es6starterproject.git
  cd es6starterproject
  npm install
  gulp
@@ -48,9 +48,9 @@ Reduce time spent by developers looking to work today with all the new ES6 featu
 * ES6 transpile via Babel
 * BrowserSync
 * Browserify
-* Karma 
+* Karma
 * SemVer
-* Jasmine 
+* Jasmine
 * Code Coverage
 * Sass
 * ESLint
@@ -81,7 +81,7 @@ The task will:
 
 ````bash
 ├── public/
-│    ├─── css/ 
+│    ├─── css/
 │    ├─── js/
 │    ├─── images/
 │    ├─── .htaccess
@@ -92,14 +92,14 @@ The task will:
 │── src/
 │    ├── images/
 │    ├── scripts/
-│	   │    ├─── core/ 
+│	   │    ├─── core/
 │	   │    ├─── models/
 │	   │    ├─── partials/
 │	   │    ├─── views
 │	   │    └─── app.js
 │	   │
 │	   ├── scss/
-│	   │    ├─── components/ 
+│	   │    ├─── components/
 │	   │    ├─── partials/
 │	   │    ├─── views/
 │	   │    └─── app.scss
