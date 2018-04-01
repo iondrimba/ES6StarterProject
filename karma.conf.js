@@ -41,11 +41,11 @@ module.exports = function (config) {
         isparta: { babel: { presets: 'env' } }
       },
       istanbul: { noCompact: true },
-      dir: 'test/reports/coverage',
+      dir: 'coverage',
       reporters: [
         {
           type: 'lcovonly',
-          subdir: 'report-lcov'
+          subdir: '/'
         }
       ]
     },

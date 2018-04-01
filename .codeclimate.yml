@@ -1,0 +1,10 @@
+ratings:
+  paths:
+  - "src/scripts/**/*.js"
+exclude_paths:
+- "spec"
+- "public"
+- "task"
+- "coverage"
+- "karma.conf.js"
+- "gulpfile.js"
