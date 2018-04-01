@@ -1,51 +1,49 @@
 'use strict';
-var Promise = require('es6-promise')
-	.Promise;
-var gulp = require('gulp');
-var gulpsync = require('gulp-sync')(gulp);
-var bump = require('gulp-bump');
-var semver = require('semver');
-var renameMe = require('rename-me');
-var pckg = require('./package.json');
+const gulp = require('gulp');
+const gulpsync = require('gulp-sync')(gulp);
+const bump = require('gulp-bump');
+const semver = require('semver');
+const renameMe = require('rename-me');
+const pckg = require('./package.json');
 
-var patch = semver.inc(pckg.version, 'patch');
-var minor = semver.inc(pckg.version, 'minor');
-var major = semver.inc(pckg.version, 'major');
+const patch = semver.inc(pckg.version, 'patch');
+const minor = semver.inc(pckg.version, 'minor');
+const major = semver.inc(pckg.version, 'major');
 
 // bump versions on package
 gulp.task('minor', function () {
-	return bumpPackageJson(minor);
+  return bumpPackageJson(minor);
 });
 gulp.task('patch', function () {
-	return bumpPackageJson(patch);
+  return bumpPackageJson(patch);
 });
 gulp.task('major', function () {
-	return bumpPackageJson(major);
+  return bumpPackageJson(major);
 });
 
 function bumpPackageJson(type) {
-	return gulp.src(['./package.json'])
-		.pipe(bump({
-			version: type
-		}))
-		.pipe(gulp.dest('./'));
+  return gulp.src(['./package.json'])
+    .pipe(bump({
+      version: type
+    }))
+    .pipe(gulp.dest('./'));
 }
 
 function bumpAppFiles(version) {
-	var options = {};
-	options.version = version;
-	options.indexFile = './public/index.html';
+  var options = {};
+  options.version = version;
+  options.indexFile = './public/index.html';
 
-	options.filePath = ['./public/js/app.js', './public/css/app.css'];
-	options.outputfolder = ['./public/js/', './public/css/'];
+  options.filePath = ['./public/js/app.js', './public/css/app.css'];
+  options.outputfolder = ['./public/js/', './public/css/'];
 
-	renameMe(options);
+  renameMe(options);
 }
 
 //copies index.html file to public folder
 gulp.task('copy', require('./tasks/copy.js'));
 
-// using vinyl-source-stream: 
+// using vinyl-source-stream:
 gulp.task('browserify', require('./tasks/browserify.js'));
 
 //eslint task
@@ -66,10 +64,10 @@ gulp.task('sass', require('./tasks/sass.js'));
 //watch js/scss/teplate files
 gulp.task('watch', require('./tasks/watch.js'));
 
-//html min 
+//html min
 gulp.task('html-min', require('./tasks/html-min.js'));
 
-//css min 
+//css min
 gulp.task('minify-css', require('./tasks/minify-css.js'));
 
 //post css
@@ -83,15 +81,15 @@ gulp.task('browser-sync', require('./tasks/browser-sync.js'));
 
 // bump package versions
 gulp.task('bump-patch', gulpsync.sync(['patch']), function renamePatch() {
-	bumpAppFiles(patch);
+  bumpAppFiles(patch);
 });
 
 gulp.task('bump-minor', gulpsync.sync(['minor']), function renameMinor() {
-	bumpAppFiles(minor);
+  bumpAppFiles(minor);
 });
 
 gulp.task('bump-major', gulpsync.sync(['major']), function renameMajor() {
-	bumpAppFiles(major);
+  bumpAppFiles(major);
 });
 
 
